@@ -1,0 +1,235 @@
+/**** NAVIGATION ****/
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 0 10px #888888;
+  min-height: 50px;
+  width: 100%;
+}
+nav div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+nav a .fa-bars,
+nav a .fa-user {
+  font-size: 23px;
+  color: black;
+}
+nav a .fa-bars:hover,
+nav a .fa-user:hover {
+  color: #020ab9;
+}
+nav .fa-bars {
+  padding: 0 0 0 20px;
+}
+nav .fa-user {
+  padding: 0 20px 0 0;
+}
+nav h1 {
+  text-align: center;
+  font-size: 28px;
+  font-family: "Cantarell";
+  margin: 15px 0 15px 50px;
+  padding: 0 0 0 0;
+}
+nav h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+#navUl {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+#navUl li a {
+  color: black;
+  text-decoration: none;
+  padding: 0 20px;
+}
+/*** END OF NAVIGATION STYLING ***/
+.fixed {
+  position: fixed;
+  border: 3px solid white;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 5px 0 10px #888888;
+  margin-left: 73%;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  width: 350px;
+}
+.airplane-icon,
+.x-out,
+.menu-x-out,
+.user-x-out {
+  height: 19px;
+}
+.airplane-icon {
+  padding-right: 3%;
+}
+.x-out {
+  margin-left: 15%;
+}
+/** FOOTER STYLING **/
+
+footer {
+  background-color: black;
+  padding-top: 3%;
+}
+hr {
+  border-top: 1px solid #8c8b8b;
+  border-bottom: 1px solid #fff;
+  width: 95%;
+  opacity: 0.2;
+}
+.footer-row-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-img {
+  width: 90%;
+  max-width: 150px;
+  height: auto;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+footer .row-1-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+footer .row-1-info {
+  display: flex;
+  flex-direction: column;
+}
+.footer-title {
+  font-size: 23px;
+  text-align: left;
+  margin-bottom: 2%;
+  color: white;
+}
+
+.footer-cities {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-top: 0;
+}
+.city {
+  font-size: 15px;
+  text-align: left;
+  padding-right: 5%;
+  white-space: nowrap;
+}
+.city a {
+  color: white;
+  text-decoration: none;
+}
+.city a:hover {
+  color: #f1dede;
+}
+section .shipping {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin: 0 0 0 400px;
+}
+.shipping-p {
+  color: white;
+  font-size: 17px;
+}
+select {
+  font-size: 19px;
+  border-bottom: 5px solid #020ab9;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  padding: 10px;
+}
+.footer-row-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+  padding-bottom: 5%;
+}
+.email-title {
+  color: white;
+  font-weight: bold;
+  padding-top: 1.5%;
+}
+.footer-p {
+  color: white;
+  font-size: 12px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+input {
+  font-size: 20px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  background-color: black;
+  border: 2px solid white;
+  padding: 10px;
+}
+.footer-list-items {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+.row2-col-1,
+.row2-col-2 {
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+}
+
+.footer-li a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+.footer-li a:hover {
+  color: #f1dede;
+}
+.footer-row-3 {
+  padding-left: 4%;
+  padding-bottom: 1.5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.copyright {
+  color: white;
+  font-size: 13px;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  margin-left: 55%;
+}
+.social-p {
+  padding-right: 10%;
+  font-size: 13px;
+}
+.social-p a {
+  color: white;
+  text-decoration: none;
+}
+/* END OF FOOTER STYLING */

@@ -1,0 +1,148 @@
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+figcaption {
+  font-size: 12px;
+}
+footer {
+  margin: 20px 0 0 0;
+}
+.footer-p {
+  font-size: 10px;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.fixed {
+  display: none;
+}
+#products .products-column {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 0;
+}
+.mobile-row-1,
+.mobile-row-2,
+.mobile-row-3,
+.mobile-row-4,
+.mobile-row-5,
+.mobile-row-6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.mobile-row-1 figure,
+.mobile-row-2 figure,
+.mobile-row-3 figure,
+.mobile-row-4 figure,
+.mobile-row-5 figure,
+.mobile-row-6 figure {
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 10px 15px 0 0;
+}
+.fig-img {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+}
+figcaption {
+  font-size: 13px;
+}
+footer {
+  margin: 20px 0 0 0;
+}
+.footer-title {
+  font-size: 20px;
+}
+.footer-row-1 {
+  display: flex;
+  justify-content: center;
+}
+.footer-cities {
+  display: flex;
+  flex-direction: column;
+}
+li.city {
+  font-size: 13px;
+  padding: 2px 0 0 2px;
+}
+section .shipping {
+  display: none;
+}
+.footer-row-2,
+.footer-row-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0;
+  text-align: center;
+}
+.email-title {
+  font-size: 17px;
+}
+
+input {
+  font-size: 14px;
+}
+.footer-list-items {
+  margin-left: 0;
+}
+.copyright {
+  margin: 5px 0 5px 0;
+}
+.socials {
+  margin-left: 0;
+}
+p.social-p {
+  padding-right: 5px;
+}
+}
+/* Small Devices, Tablets */
+/* Smallest desktop size */
+
+@media only screen and (max-width : 768px) {
+
+nav h1 {
+  margin: 15px 0 15px 5px;
+}
+figcaption,
+button a {
+  font-size: 14px;
+}
+}
+
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width : 480px) {
+
+.menu-x-out {
+  font-size: 15px;
+  padding: 10px 0 0 350px;
+}
+.menu-dropdown {
+  max-height: 700px;
+  height: 100%;
+}
+figcaption,
+button a {
+  font-size: 10px;
+}
+
+    .mobile-row-1 figure,
+    .mobile-row-2 figure,
+    .mobile-row-3 figure,
+    .mobile-row-4 figure,
+    .mobile-row-5 figure,
+    .mobile-row-6 figure {
+      width: 100%;
+      margin: 0 0 0 0;
+      padding: 10px 5px 0 0;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

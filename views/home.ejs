@@ -1,0 +1,181 @@
+<head>
+  <link rel="stylesheet" href="/css/navFooter.css" type="text/css" />
+  <link rel="stylesheet" href="/css/index.css" />
+  <link
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    rel="stylesheet"
+    media="screen"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Cantarell:700i|Source+Sans+Pro|Varela+Round&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=PT+Serif:400i&display=swap"
+    rel="stylesheet"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <%- include ('../partials/navigation.ejs') %>
+
+  <div class="fixed">
+    <img
+      class="airplane-icon"
+      src="https://img.icons8.com/ios/64/000000/paper-plane.png"
+    />
+    <p><strong>Free shipping on orders over $30</strong></p>
+    <img
+      class="x-out"
+      src="https://img.icons8.com/ios/100/000000/close-window.png"
+    />
+  </div>
+  <section id="intro">
+    <img id="introImg" src="/images/HomeImages/fentyEdit.jpg" />
+    <div id="introText">
+      <h2>Concealers for Every Shade</h2>
+      <p>
+        Match to your perfect shade and effortlessly blend every nook, crease,
+        and cranny where you apply
+      </p>
+      <button id="introBtn"><a href="">Shop Now</a></button>
+    </div>
+  </section>
+  <hr class="introHr" />
+  <section id="routine">
+    <section class="container">
+      <section class="routine-text">
+        <h3>Your makeup routine revolutionized</h3>
+        <p id="routine-p">
+          Fenty Beauty is a new approach to beauty. It’s about fun and freedom
+          and being OK with yourself today. We make intuitive, uncomplicated
+          products designed to live with you.
+        </p>
+      </section>
+
+      <section id="routine-figures">
+        <figure id="fig-1">
+          <img src="/images/HomeImages/fentyPrimer.jpg" />
+          <!-- <img class="figure-img-1-hidden" src="../images/fentyPrimer2.jpg" /> -->
+          <figcaption><a href="">Pro Filt'r Hydrating Primer</a></figcaption>
+          <button><a href="">Add to Bag $32</a></button>
+        </figure>
+
+        <figure id="fig-2">
+          <img
+            class="figure-img-2"
+            src="/images/HomeImages/fentyFoundationwithBrush.jpg"
+          />
+          <figcaption><a href="">Pro Filt'r Foundation Set</a></figcaption>
+          <button><a href="">Add to Bag $35</a></button>
+        </figure>
+
+        <figure id="fig-3">
+          <img
+            class="figure-img-3"
+            src="/images/HomeImages/fentyFoundationwithBrush.jpg"
+          />
+          <figcaption><a href="">Body Lava Body Luminizer</a></figcaption>
+          <button><a href="">Add to Bag $38</a></button>
+        </figure>
+
+        <figure id="fig-4">
+          <img class="figure-img-4" src="../images/fentyLipLuminizer.jpg" />
+          <figcaption><a href="">Gloss Bomb Lip Luminizer</a></figcaption>
+          <button><a href="">Add to Bag $18</a></button>
+        </figure>
+      </section>
+    </section>
+    <section id="about-div">
+      <div class='container'>
+      <h3>About <span>Fenty.</span></h3>
+          <section id="about-figures">
+          <figure>
+            <img src="https://img.icons8.com/color/48/000000/lips.png">
+            <figcaption class="about-fig">Before she was BadGalRiRi: Robyn Rihanna Fenty was a little girl in Barbados transfixed by her mother’s lipstick. <figcaption>
+          </figure>
+    
+          <figure>
+            <img src="https://img.icons8.com/ios/50/000000/eyelash.png">
+            <figcaption class="about-fig">Rihanna created Fenty Beauty after seeing a void in the industry for products that performed across all skin tones.</figcaption>
+          </figure>
+    
+          <figure>
+            <img src="https://img.icons8.com/ultraviolet/40/000000/face-powder.png">
+            <figcaption class="about-fig">Rihanna creates makeup to inspire: "Feel free to take chances, and take risks, and dare to do something new or different.”</figcaption>
+          </figure>
+        </section>
+    </div>
+      </section>
+    </section>
+
+    <section id="articles">
+      <section class="container">
+        <h3>Real people share their real routines.</h3>
+        <section class="articles-section">
+          <section id="row-1">
+            <figure class="article-fig">
+              <img class="article-img" src="../images/fentyEye2.jpg" />
+              <figcaption><a href="">
+                <p class="article-name">Easy Evening Eye Look</p>
+                <p class="author">by Jane Doe</p>
+              </a></figcaption>
+            </figure>
+            <figure class="article-fig">
+              <img class="article-img" src="../images/fenty10MinuteLook.jpg" />
+              <figcaption><a href="">
+                <p class="article-name">10 Minute Morning Routine</p>
+                <p class="author">by John Doe</p>
+              </a></figcaption>
+            </figure>
+            <figure class="article-fig fig-remove-1">
+              <img class="article-img" src="/images/HomeImages/fentySunKissed.jpg" />
+              <figcaption><a href="">
+                <p class="article-name">Sunkissed Glow Without the Sun</p>
+                <p class="author">by Jane Doe</p>
+              </a></figcaption>
+            </figure>
+          </section>
+          <section id="row-2">
+            <figure class="article-fig">
+              <img class="article-img" src="/images/HomeImages/fentyDermatologist.jpg" />
+              <figcaption><a href="">
+                <p class="article-name">A Dermatologist's Skincare Routine</p>
+                <p class="author">by Jan Doe</p>
+              </a></figcaption>
+            </figure>
+            <figure class="article-fig">
+              <img class="article-img" src="/images/HomeImages/fentyEMT.jpg" />
+              <figcaption><a href="">
+                <p class="article-name">An EMT's 24 Hour Shift Makeup</p>
+                <p class="author">by Jen Doe</p>
+              </a></figcaption>
+            </figure>
+            <figure class="article-fig fig-remove-2">
+              <a href=""><img class="article-img" src="/images/HomeImages/fentyDateNight.jpg" />
+              <figcaption><a href="">
+                <p class="article-name">Saturday Night Date Routine</p>
+                <p class="author">by Janet Doe</p>
+              </a></figcaption>
+            </figure>
+          </section>
+      </section>
+    </section>
+    </section>
+    
+    <section id="reviews-section">
+      <section class="container">
+        <p id="vogue-text" class="on">“In an age of online access and unending choice,<br>customer engagement is something that Fenty has gotten right.”</p>
+        <p id="elle-text" class="off">“Revolutionary for its time, harnessing a certain<br>come-as-you-are acceptance.”</p>
+        <p id="vanityfair-text" class="off">"Allows all people to look like the best version of<br>themselves, not an aspirational version of someone else.”</p>
+    
+        <section class="review-companies">
+          <a href=""><img id="vogue-img" src="/images/HomeImages/vogue.png" /></a>
+          <a href=""><img id="elle-img" src="/images/HomeImages/elle.png"></a>
+          <a href=""><img id="vanityfair-img" src="/images/HomeImages/vanityfair1.png"></a>
+        </section>
+        </section>
+      </section>
+
+  <%- include ('../partials/footer.ejs') %>
+</body>
