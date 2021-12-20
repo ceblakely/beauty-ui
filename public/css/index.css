@@ -47,6 +47,7 @@ section #introBtn {
   text-decoration: none;
   color: black;
 }
+
 button {
   background-color: white;
   border-radius: 5px;
@@ -60,12 +61,12 @@ button a {
   text-decoration: none;
   color: black;
 }
-.intro-btn:hover,
+#introBtn:hover,
 button:hover {
   box-shadow: 5px 0 10px #888888;
   transition-duration: 0.5s;
 }
-.intro-btn a:hover,
+#introBtn a:hover,
 button a:hover {
   color: #020ab9;
   transition-duration: 1s;
@@ -140,6 +141,50 @@ span {
   line-height: 20px;
 }
 /*** END OF ABOUT ***/
+
+/*** BESTSELLERS ***/
+#bestsellers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+#bestsellers-row-1,
+#bestsellers-row-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px 20px 0;
+}
+#bestsellers-figures {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bestsellers-fig {
+  float: left;
+  width: 100%;
+  margin: 0 0 0 0;
+  /* opacity: 0; */
+}
+#bestsellers-section .best-fig-item-1,
+#bestsellers-section .best-fig-item-2 {
+  padding-right: 15px;
+}
+.best-img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
+#bestsellers-model {
+  max-width: 750px;
+  width: 100%;
+  height: auto;
+}
+#bestsellers-model-1 {
+  display: none;
+}
 
 /*** ARTICLES ***/
 #articles {
