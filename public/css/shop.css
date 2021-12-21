@@ -1,78 +1,75 @@
-/*** Global Styling ***/
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Varela Round";
-  font-weight: 900px;
+@media (min-width: 320px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .container {
+    width: 95%;
+    margin: auto;
+    overflow-x: hidden;
+  }
+  figcaption a {
+    text-decoration: none;
+    color: black;
+  }
+  figcaption a:hover {
+    text-decoration: underline;
+    color: #020ab9;
+  }
+  button {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1%;
+    border: 1px solid black;
+    margin: 5%;
+    padding: 3%;
+  }
+  button a {
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+  }
+  button:hover {
+    box-shadow: 5px 0 10px #888888;
+    transition-duration: 0.5s;
+  }
+  button a:hover {
+    color: #020ab9;
+    transition-duration: 1s;
+  }
+  figure {
+    padding: 2%;
+    margin: 0;
+  }
+  figcaption {
+    font-size: 19px;
+  }
+  #mobile-row-1,
+  #mobile-row-2,
+  #mobile-row-3,
+  #mobile-row-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .fig-img {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+  }
 }
-.container {
-  width: 95%;
-  margin: auto;
-  overflow: hidden;
-}
-h3 {
-  font-weight: bold;
-  font-size: 25px;
-  margin: 15px 15px 15px 0;
-}
-figcaption {
-  font-size: 15px;
-  text-align: left;
-  width: 90%;
-}
-figcaption a {
-  text-decoration: none;
-  color: black;
-}
-figcaption a:hover {
-  text-decoration: underline;
-  color: #020ab9;
-}
-/*
-.products-column {
-  width: 100vw;
-  margin: 0 0 0 0;
-} */
-.fig-img {
-  max-width: 700px;
-  width: 100%;
-  height: auto;
-}
-
-.mobile-row-1 figure,
-.mobile-row-2 figure,
-.mobile-row-3 figure,
-.mobile-row-4 figure,
-.mobile-row-5 figure,
-.mobile-row-6 figure {
-  width: 22%;
-  margin: 15px 0 0 0;
-  padding: 0 25px 0 5px;
-  display: inline;
-  float: left;
-  text-align: center;
-}
-figcaption {
-  padding-top: 5px;
-}
-button {
-  background-color: white;
-  border-radius: 5px;
-  padding: 5%;
-  border: 1px solid black;
-  margin-top: 4%;
-  margin-bottom: 8%;
-}
-button a {
-  font-size: 17px;
-  text-decoration: none;
-  color: black;
-}
-button:hover {
-  box-shadow: 5px 0 10px #888888;
-  transition-duration: 0.5s;
-}
-button a:hover {
-  color: #020ab9;
-  transition-duration: 1s;
+@media (min-width: 768px) {
+  #products {
+    margin-bottom: 3%;
+  }
+  figcaption {
+    font-size: 17px;
+    text-align: left;
+    width: 90%;
+  }
+  #row-1,
+  #row-2 {
+    display: flex;
+    flex-direction: row;
+  }
 }
