@@ -4,6 +4,7 @@ body {
   font-family: "Varela Round";
   font-weight: 900px;
 }
+
 #intro {
   display: flex;
   flex-direction: row;
@@ -146,8 +147,6 @@ span {
 #bestsellers {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
 }
 #bestsellers-row-1,
 #bestsellers-row-2 {
@@ -166,7 +165,6 @@ span {
   float: left;
   width: 100%;
   margin: 0 0 0 0;
-  /* opacity: 0; */
 }
 #bestsellers-section .best-fig-item-1,
 #bestsellers-section .best-fig-item-2 {
@@ -181,9 +179,6 @@ span {
   max-width: 750px;
   width: 100%;
   height: auto;
-}
-#bestsellers-model-1 {
-  display: none;
 }
 
 /*** ARTICLES ***/
@@ -209,6 +204,50 @@ span {
 }
 /*** END OF ARTICLES ***/
 
+/*** COMPLEXION ***/
+#complexion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+#skin-model-1 {
+  max-width: 750px;
+  width: 100%;
+  height: auto;
+}
+#skin-figures {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start;
+  align-items: flex-start;
+  /* align-items: flex-end; */
+}
+#skin-row-1,
+#skin-row-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 20px 20px;
+}
+.skin-fig img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
+.skin-fig {
+  float: left;
+  width: 100%;
+  margin: 0 0 0 0;
+}
+.trophywife-fig,
+.bronze-fig {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*** END OF COMPLEXION ***/
 /*** REVIEWS ***/
 #reviews-section {
   display: flex;
