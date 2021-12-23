@@ -1,56 +1,74 @@
-/**** NAVIGATION ****/
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 5px 0 10px #888888;
-  min-height: 50px;
-  width: 100%;
+@media (min-width: 320px) {
+  /*** NAV STYLES ***/
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 0 10px #888888;
+    min-height: 50px;
+    width: 100%;
+  }
+  nav div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  nav h1 {
+    text-align: center;
+    font-size: 28px;
+    font-family: "Cantarell";
+    margin: 15px 0 15px 10px;
+    padding: 0 0 0 0;
+  }
+  nav h1 a {
+    text-decoration: none;
+    color: black;
+  }
+  #navUl {
+    display: none;
+  }
+  nav .fa-user {
+    display: none;
+  }
+  #menuIcon {
+    display: block;
+    margin-right: 10px;
+    height: 31px;
+  }
+  /*** END OF NAV STYLES ***/
 }
-nav div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-nav a .fa-bars,
-nav a .fa-user {
-  font-size: 23px;
-  color: black;
-}
-nav a .fa-bars:hover,
-nav a .fa-user:hover {
-  color: #020ab9;
-}
-nav .fa-bars {
-  padding: 0 0 0 20px;
-}
-nav .fa-user {
-  padding: 0 20px 0 0;
-}
-nav h1 {
-  text-align: center;
-  font-size: 28px;
-  font-family: "Cantarell";
-  margin: 15px 0 15px 50px;
-  padding: 0 0 0 0;
-}
-nav h1 a {
-  text-decoration: none;
-  color: black;
+@media (min-width: 768px) {
+  /*** NAV STYLES ***/
+  #navUl {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+  #navUl li a {
+    color: black;
+    text-decoration: none;
+    padding: 0 20px;
+  }
+  #menuIcon {
+    display: none;
+  }
+  nav .fa-user {
+    display: block;
+  }
+  nav a .fa-user {
+    font-size: 23px;
+    color: black;
+  }
+  nav a .fa-user:hover {
+    color: #020ab9;
+  }
+  nav .fa-user {
+    padding: 0 20px 0 0;
+  }
+  /*** END OF NAV STYLES ***/
 }
 
-#navUl {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-}
-#navUl li a {
-  color: black;
-  text-decoration: none;
-  padding: 0 20px;
-}
-/*** END OF NAVIGATION STYLING ***/
 .fixed {
   position: fixed;
   border: 3px solid white;
