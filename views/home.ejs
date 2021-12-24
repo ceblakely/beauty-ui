@@ -18,18 +18,20 @@
 </head>
 <body>
   <%- include ('../partials/navigation.ejs') %>
-<!--
-  <div class="fixed">
+
+  <div id="banner">
     <img
-      class="airplane-icon"
+      id="airplane-icon"
       src="https://img.icons8.com/ios/64/000000/paper-plane.png"
     />
     <p><strong>Free shipping on orders over $30</strong></p>
-    <img
-      class="x-out"
+    <a href=''><img
+      id="x-out"
       src="https://img.icons8.com/ios/100/000000/close-window.png"
-    />
-  </div> -->
+    /></a>
+  </div> 
+  
+  
   <section id="intro">
     <img id="introImg" src="/images/HomeImages/fentyEdit.jpg" />
     <div id="introText">
@@ -40,10 +42,13 @@
       </p>
       <button id="introBtn"><a href="">Shop Now</a></button>
     </div>
+ 
   </section>
+
   <hr class="introHr" />
+<!-- 
   <section id="routine">
-    <section class="container">
+    
       <section class="routine-text">
         <h3>Your makeup routine revolutionized</h3>
         <p id="routine-p">
@@ -52,13 +57,16 @@
           products designed to live with you.
         </p>
       </section>
+      </section>
+      </section>
+   
 
       <section id="routine-figures">
-        
+        <div class='container'>
+          <h3>Create Your Fenty Routine.</h3>
         <div id='routineRow1'>
           <figure id="fig-1">
             <img src="/images/HomeImages/fentyPrimer.jpg" />
-            
             <figcaption><a href="">Pro Filt'r Hydrating Primer</a></figcaption>
             <button><a href="">Add to Bag $32</a></button>
           </figure>
@@ -89,10 +97,10 @@
             <button><a href="">Add to Bag $18</a></button>
           </figure>
        </div>
-      
+      </div>
        </section>
       </section>
-    </section>
+    </section> -->
 
     <section id="about-div">
       <div class='container'>
@@ -115,7 +123,7 @@
         </section>
     </div>
       </section>
-    </section>
+    </section> 
 
     <section id="bestsellers-section">
       <div class="container">
@@ -156,20 +164,17 @@
         </div>    
       
         <div class="model-section">
-          <img id="bestsellers-model" src="/images/HomeImages/fentylashes.png" />
-          <!-- <img id="bestsellers-model-1" src="/images/HomeImages/fentylashes1.png" /> -->
+          <img id="bestsellersModel" src="/images/HomeImages/fentylashes.png" />
+           <img id="bestsellersMobile" src="/images/HomeImages/fentylashes1.png" /> 
         </div>
       </section>
-
-
-
 
     <section id="articles">
       <section class="container">
         <h3>Real people share their real routines.</h3>
-        <section class="articles-section">
-          <section id="row-1">
-            <figure class="article-fig">
+        <section id="articles-figures">
+          <section id="articlesRow1">
+            <figure class='article-fig'>
               <a href=''><img class="article-img" src="/images/HomeImages/fentyEye2.jpg" /></a>
               <figcaption><a href="">
                 <p class="article-name">Easy Evening Eye Look</p>
@@ -191,7 +196,7 @@
               </a></figcaption>
             </figure>
           </section>
-          <section id="row-2">
+          <section id="articlesRow2">
             <figure class="article-fig">
               <a href=''><img class="article-img" src="/images/HomeImages/fentyDermatologist.jpg" /></a>
               <figcaption><a href="">
@@ -220,21 +225,27 @@
     
     <section id="complexion">
       <div class="container">
-        <h3 class="skin-title">Complexion perfection</h3>
+        <h3>Complexion perfection</h3>
         <div id='complexion'>
-          
+          <!-- 
           <div class='model-section'>
-            <img id="skin-model-1" src="images/HomeImages/fentyModel.png" />
-          </div>
+            <img id="skin-model-1" src="images/HomeImages/fentySkin2.jpg" />
+          </div> -->
           
             <div id="skin-figures">
-              <div id="row-1">
-                  <figure class="skin-fig trophywife-fig">
+                <div id="skinRow1">
+                  
+                  <figure class='skin-fig'>
+                    <img id="skin-model-1" src="images/HomeImages/fentySkin2.jpg" />
+                  </figure>
+                  
+                  <figure class="skin-fig skinPadding">
                     <img class="skin-img" src="/images/HomeImages/fentyTrophyWifePack.jpg" />
                     <figcaption><a href="">Trophy Wife Life Full Face Set</a></figcaption>
                     <button><a href="">Add to Bag $69</a></button>
                   </figure>
-    
+                  
+                  
                   <figure class="skin-fig">
                     <img class="skin-img" src="/images/HomeImages/fentyMatteSet.jpg" />
                     <figcaption><a href="">Soft Matte Complexion Set</a></figcaption>
@@ -242,41 +253,42 @@
                   </figure>
                 </div>
               
-              <div id="row-2">
-                  <figure class="skin-fig bronze-fig">
+              <div id="skinRow2">
+                  <figure class="skin-fig skinPadding">
                     <img class="skin-img" src="/images/HomeImages/fentyBronzeSet.jpg" />
                     <figcaption><a href="">Lil Bronze Duo Mini Bronzer Set</a></figcaption>
                     <button><a href="">Add to Bag $24</a></button>
                   </figure>
-    
+              
+               
                 <figure class="skin-fig">
                   <img class="skin-img" src="/images/HomeImages/fentyInvisimatte.jpg" />
                   <figcaption><a href="">InvisiMatte Complete Essentials</a></figcaption>
                   <button><a href="">Add to Bag $72</a></button>
                 </figure>
+
+                <figure class="skin-fig">
+                  <img class="skin-img skinPadding" src="/images/HomeImages/fentyInvisimatte.jpg" />
+                  <figcaption><a href="">InvisiMatte Complete Essentials</a></figcaption>
+                  <button><a href="">Add to Bag $72</a></button>
+                </figure>
+                </div>
               </div>
             </div>
           </div>
               
         </section>
-
-
-
-
     <section id="reviews-section">
       <section class="container">
-        <p id="vogue-text" class="on">“In an age of online access and unending choice,<br>customer engagement is something that Fenty has gotten right.”</p>
-        <p id="elle-text" class="off">“Revolutionary for its time, harnessing a certain<br>come-as-you-are acceptance.”</p>
-        <p id="vanityfair-text" class="off">"Allows all people to look like the best version of<br>themselves, not an aspirational version of someone else.”</p>
-    
-        <section class="review-companies">
-          <a href=""><img id="vogue-img" src="/images/HomeImages/vogue.png" /></a>
-          <a href=""><img id="elle-img" src="/images/HomeImages/elle.png"></a>
-          <a href=""><img id="vanityfair-img" src="/images/HomeImages/vanityfair1.png"></a>
+      <p id='quoteP'></p>
+        <section id="reviewCompanies">
+          <a href=""><img id="vogueImg" src="/images/HomeImages/vogue.png" /></a>
+          <a href=""><img id="elleImg" src="/images/HomeImages/elle.png"></a>
+          <a href=""><img id="vanityFairImg" src="/images/HomeImages/vanityfair1.png"></a>
         </section>
         </section>
       </section>
 
   <%- include ('../partials/footer.ejs') %>
-  <script src='public/home.js'></script>
+  <script src='/home.js'></script>
 </body>

@@ -4,6 +4,9 @@
     margin: auto;
     overflow-x: hidden;
   }
+  #banner {
+    display: none;
+  }
   /*** NAV STYLES ***/
   nav {
     display: flex;
@@ -251,7 +254,7 @@
     flex-direction: row;
   }
   /*** END OF FOOTER STYLES ***/
-  .fixed {
+  #banner {
     position: fixed;
     border: 3px solid white;
     border-radius: 3px;
@@ -266,16 +269,14 @@
     white-space: nowrap;
     width: 350px;
   }
-  .airplane-icon,
-  .x-out,
-  .menu-x-out,
-  .user-x-out {
+  #airplane-icon,
+  #x-out {
     height: 19px;
   }
-  .airplane-icon {
+  #airplane-icon {
     padding-right: 3%;
   }
-  .x-out {
+  #x-out {
     margin-left: 15%;
   }
 }
