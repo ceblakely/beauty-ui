@@ -32,26 +32,30 @@
     color: #020ab9;
     transition-duration: 1s;
   }
-  #introImg {
+
+  #IntroImg {
     max-width: 1200px;
     width: 100%;
-    height: auto;
+    height: 50vh;
     margin-left: 30px;
     margin-right: 30px;
   }
   h2 {
     font-weight: bold;
     font-size: 30px;
+    text-align: center;
   }
-  section #introText {
+  #introText {
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 350px;
     width: 80%;
     height: auto;
+    text-align: center;
     /* margin: 150px 80px 0 0; */
   }
+
   figcaption a {
     color: black;
     text-decoration: none;
@@ -87,6 +91,7 @@
     background-color: #006d77;
     margin-top: 30px;
     padding-bottom: 30px;
+    text-align: center;
   }
   #about-figures figure img {
     max-width: 50px;
@@ -94,17 +99,19 @@
     height: auto;
   }
   #about-figures figure {
-    display: inline;
-    float: left;
-    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     max-width: 250px;
     height: auto;
     padding: 0 25px 0 0;
   }
 
   .about-fig {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 80vw;
+    text-align: left;
   }
   /*** END OF ABOUT ***/
 
@@ -113,13 +120,43 @@
     display: flex;
     flex-direction: column;
   }
+
   #bestsellers-row-1,
-  #bestsellers-row-2 {
+  #bestsellers-row-2,
+  #articlesRow1,
+  #articlesRow2 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center; /* used to be center */
     align-items: center;
     margin: 0 20px 20px 0;
+  }
+
+  #skinRow1,
+  #skinRow2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 1px;
+  }
+  #complexion h3 {
+    text-align: center;
+    font-size: 27px;
+  }
+  .skinPadding {
+    padding: 1px;
+  }
+  #routine-figures figure,
+  #bestsellers figure {
+    margin: 1px;
+  }
+  #bestsellersModel {
+    display: none;
+  }
+  #bestsellersMobile {
+    max-width: 825px;
+    width: 100%;
+    height: auto;
   }
   #routine-figures,
   #bestsellers-figures {
@@ -134,17 +171,23 @@
     flex-direction: row;
   }
   #routine-figures figure {
-    padding: 0 25px 0 25px;
-    margin: 0;
+    /* padding: 0 25px 0 25px; */
+    margin: 1px;
   }
+  #routine-figures img,
   #bestsellers-figures img,
   #routine-figures img,
+  #articles img,
   #skin-figures img {
     max-width: 450px;
     width: 100%;
     height: auto;
   }
   /*** END OF BESTSELLERS ***/
+  .skin-fig,
+  .article-fig {
+    margin: 1px;
+  }
   .container {
     width: 95%;
     margin: auto;
@@ -166,17 +209,23 @@
     margin: 0 0 0 0;
   }
   #introImg {
+    display: block;
     max-width: 1200px;
-    width: 75%;
+    width: 80%;
     height: auto;
     margin-left: 30px;
+  }
+  #introText {
+    width: 20%;
     margin-right: 30px;
   }
+
   /*** BESTSELLERS ***/
   #bestsellers {
     display: flex;
     flex-direction: row;
   }
+
   .bestsellers-fig {
     float: left;
     width: 100%;
@@ -191,19 +240,26 @@
     width: 100%;
     height: auto;
   }
-  #bestsellers-model {
-    max-width: 750px;
+  #skin-model-1,
+  #bestsellersModel {
+    /* max-width: 750px; */
+    display: inline;
+    max-width: 825px;
     width: 100%;
-    height: auto;
+    height: inherit;
+    /* height can also be auto*/
   }
-
+  #bestsellersMobile {
+    display: none;
+  }
   .intro-hr {
     margin-top: 35px;
   }
-
-  #routine-figures,
-  #routineRow1,
-  #routineRow2 {
+  #routine-figures figure {
+    padding: 0 25px 0 25px;
+    margin: 0;
+  }
+  #routine-figures {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -230,14 +286,20 @@
   } */
 
   /*** ABOUT ***/
-
+  #about-div {
+    text-align: left;
+  }
   section #about-figures {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-
+  .about-fig {
+    font-size: 18px;
+    line-height: 30px;
+    width: inherit;
+  }
   /*** END OF ABOUT ***/
 
   /*** ARTICLES ***/
@@ -258,8 +320,10 @@
   #row-2 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+  }
+  .article-fig {
+    margin: 1px;
   }
   /*** END OF ARTICLES ***/
 
@@ -271,7 +335,7 @@
     align-items: flex-start;
   }
   #skin-model-1 {
-    max-width: 750px;
+    max-width: 650px; /* 750px; */
     width: 100%;
     height: auto;
   }
@@ -279,32 +343,27 @@
     display: flex;
     flex-direction: column;
   }
-  #skin-row-1,
-  #skin-row-2 {
+
+  #skinRow1,
+  #skinRow2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     margin: 0 0 20px 20px;
   }
-  /* 
-  .skin-fig img {
-    max-width: 350px;
-    width: 100%;
-    height: auto;
-  } */
-  .skin-fig {
+  #skin-figures figure {
     float: left;
     width: 100%;
     margin: 0 0 0 0;
   }
-  .trophywife-fig,
-  .bronze-fig {
+
+  .skinPadding {
     padding-left: 15px;
     padding-right: 15px;
   }
 
   /*** END OF COMPLEXION ***/
+
   /*** REVIEWS ***/
   #reviews-section {
     display: flex;
