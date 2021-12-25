@@ -365,7 +365,7 @@
   /*** END OF COMPLEXION ***/
 
   /*** REVIEWS ***/
-  #reviews-section {
+  #reviewSection {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -375,15 +375,13 @@
     font-family: "PT Serif";
     background-color: #006d77;
   }
-  #vogue-text,
-  #elle-text,
-  #vanityfair-text {
+  #quoteP {
     font-size: 27px;
     text-align: center;
     line-height: 35px;
     margin: 0 0 0 0;
   }
-  .review-companies {
+  #reviewCompanies {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -391,20 +389,24 @@
     padding-top: 1.5%;
   }
 
-  #vogue-img,
-  #elle-img,
-  #vanityfair-img {
+  #vogueImg,
+  #elleImg,
+  #vanityFairImg {
     max-width: 200px;
     width: 100%;
     height: auto;
   }
-  #vogue-img {
+  #vogueImg {
     margin: 0 100px 0 0;
   }
-  #vanityfair-img {
+  #vanityFairImg {
     margin: 0 0 0 100px;
   }
   .borders-div {
     width: 80px;
+  }
+  .activeImg {
+    border-bottom: 3px solid white;
+    padding: 13px;
   }
 }
