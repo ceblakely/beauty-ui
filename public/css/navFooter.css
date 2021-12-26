@@ -1,12 +1,10 @@
-@media (min-width: 320px) {
+@media screen and (min-width: 150px) {
   .container {
     width: 95%;
     margin: auto;
     overflow-x: hidden;
   }
-  #banner {
-    display: none;
-  }
+
   /*** NAV STYLES ***/
   nav {
     display: flex;
@@ -43,6 +41,24 @@
     display: block;
     margin-right: 10px;
     height: 31px;
+  }
+  .mobileNavActive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100vw;
+  }
+  .mobileNavActive li {
+    list-style-type: none;
+  }
+  .mobileNavActive li a {
+    color: black;
+    text-decoration: none;
+  }
+  .hide {
+    display: none;
   }
   /*** END OF NAV STYLES ***/
 
@@ -216,6 +232,7 @@
   nav .fa-user {
     padding: 0 20px 0 0;
   }
+
   /*** END OF NAV STYLES ***/
 
   /*** FOOTER STYLES ***/
