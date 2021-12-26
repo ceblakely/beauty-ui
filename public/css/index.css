@@ -1,4 +1,24 @@
 @media (min-width: 320px) {
+  .hideImg {
+    display: none;
+  }
+  .activeImg {
+    padding: 0 120px;
+  }
+  .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
   body {
     padding: 0;
     margin: 0;
@@ -380,6 +400,7 @@
     text-align: center;
     line-height: 35px;
     margin: 0 0 0 0;
+    padding-bottom: 50px;
   }
   #reviewCompanies {
     display: flex;
@@ -388,25 +409,13 @@
     align-items: center;
     padding-top: 1.5%;
   }
-
-  #vogueImg,
-  #elleImg,
-  #vanityFairImg {
+  #reviewImg {
     max-width: 200px;
     width: 100%;
     height: auto;
-  }
-  #vogueImg {
-    margin: 0 100px 0 0;
-  }
-  #vanityFairImg {
-    margin: 0 0 0 100px;
+    margin: 20px;
   }
   .borders-div {
     width: 80px;
-  }
-  .activeImg {
-    border-bottom: 3px solid white;
-    padding: 13px;
   }
 }
