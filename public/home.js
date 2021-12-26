@@ -37,8 +37,13 @@ document.querySelectorAll(".arrow").forEach((arrow) => {
     e.preventDefault();
   });
 });
-document.getElementById("x-out").addEventListener("click", (e) => {
-  document.getElementById("banner").remove();
+
+document.getElementById("menuIcon").addEventListener("click", (e) => {
+  const desktopNav = document.getElementById("desktopNav");
+  const mobileNav = document.getElementById("mobileNav");
+  desktopNav.classList.add("hide");
+  mobileNav.classList.remove("hide");
+  mobileNav.classList.add("mobileNavActive");
   e.preventDefault();
 });
 window.addEventListener("load", () => {

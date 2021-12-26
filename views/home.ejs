@@ -18,8 +18,7 @@
 </head>
 <body>
   <%- include ('../partials/navigation.ejs') %>
-
-  <div id="banner">
+  <!-- <div id="banner">
     <img
       id="airplane-icon"
       src="https://img.icons8.com/ios/64/000000/paper-plane.png"
@@ -29,10 +28,9 @@
       id="x-out"
       src="https://img.icons8.com/ios/100/000000/close-window.png"
     /></a>
-  </div> 
+  </div> -->
   
-  
-  <section id="intro">
+  <section id="intro" class='fade one'>
     <img id="introImg" src="/images/HomeImages/fentyEdit.jpg" />
     <div id="introText">
       <h2>Concealers for Every Shade</h2>
@@ -46,63 +44,8 @@
   </section>
 
   <hr class="introHr" />
-<!-- 
-  <section id="routine">
-    
-      <section class="routine-text">
-        <h3>Your makeup routine revolutionized</h3>
-        <p id="routine-p">
-          Fenty Beauty is a new approach to beauty. It’s about fun and freedom
-          and being OK with yourself today. We make intuitive, uncomplicated
-          products designed to live with you.
-        </p>
-      </section>
-      </section>
-      </section>
-   
 
-      <section id="routine-figures">
-        <div class='container'>
-          <h3>Create Your Fenty Routine.</h3>
-        <div id='routineRow1'>
-          <figure id="fig-1">
-            <img src="/images/HomeImages/fentyPrimer.jpg" />
-            <figcaption><a href="">Pro Filt'r Hydrating Primer</a></figcaption>
-            <button><a href="">Add to Bag $32</a></button>
-          </figure>
-  
-          <figure id="fig-2">
-            <img
-              class="figure-img-2"
-              src="/images/HomeImages/fentyFoundationwithBrush.jpg"
-            />
-            <figcaption><a href="">Pro Filt'r Foundation Set</a></figcaption>
-            <button><a href="">Add to Bag $35</a></button>
-          </figure>
-       </div>
-        
-        <div id='routineRow2'>
-          <figure id="fig-3">
-            <img
-              class="figure-img-3"
-              src="/images/HomeImages/fentyFoundationwithBrush.jpg"
-            />
-            <figcaption><a href="">Body Lava Body Luminizer</a></figcaption>
-            <button><a href="">Add to Bag $38</a></button>
-          </figure>
-  
-          <figure id="fig-4">
-            <img class="figure-img-4" src="../images/fentyLipLuminizer.jpg" />
-            <figcaption><a href="">Gloss Bomb Lip Luminizer</a></figcaption>
-            <button><a href="">Add to Bag $18</a></button>
-          </figure>
-       </div>
-      </div>
-       </section>
-      </section>
-    </section> -->
-
-    <section id="about-div">
+    <section id="about-div" class='fade two'>
       <div class='container'>
       <h3>About <span>Fenty.</span></h3>
           <section id="about-figures">
@@ -125,7 +68,7 @@
       </section>
     </section> 
 
-    <section id="bestsellers-section" class='scrollEffect'>
+    <section id="bestsellers-section" class='fade three'>
       <div class="container">
         <div class="bestsellers-text">
           <h3 class="bestsellers-h3">Hottest Bestsellers</h3>
@@ -168,7 +111,7 @@
         </div>
       </section>
 
-    <section id="articles">
+    <section id="articles" class='fade four'>
       <section class="container">
         <h3>Real people share their real routines.</h3>
         <section id="articles-figures">
@@ -222,15 +165,10 @@
     </section>
     </section>
     
-    <section id="complexion">
+    <section id="complexion" class='fade five'>
       <div class="container">
         <h3>Complexion perfection</h3>
-        <div id='complexion'>
-          <!-- 
-          <div class='model-section'>
-            <img id="skin-model-1" src="images/HomeImages/fentySkin2.jpg" />
-          </div> -->
-          
+        <div id='complexion'>    
             <div id="skin-figures">
                 <div id="skinRow1">
                   
@@ -277,7 +215,7 @@
           </div>
               
         </section>
-    <section id="reviewSection">
+    <section id="reviewSection" class='fade six'>
       <section class="container">
       <p id='quoteP'></p>
         <section id="reviewCompanies">
@@ -287,7 +225,6 @@
         </section>
         </section>
       </section>
-
   <%- include ('../partials/footer.ejs') %>
   <script src='/home.js'></script>
 </body>
